@@ -1,0 +1,188 @@
+﻿生成启动时间为 2017/2/23 20:03:59。
+     1>项目“E:\VS2013_Project\hsp\hsegment\hsegment.vcxproj”在节点 2 上(Build 个目标)。
+     1>AddCudaCompileDeps:
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\cl.exe /E /nologo /showIncludes /TP /D__CUDACC__ /D_CRT_SECURE_NO_WARNINGS /D_MBCS /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include" /I. /FIcuda_runtime.h /c E:\VS2013_Project\hsp\hsegment\segment.cu 
+       CudaBuild:
+         Compiling CUDA source file segment.cu...
+         cmd.exe /C "C:\Users\star\AppData\Local\Temp\tmpd548065caae84becad31771740f0ecd3.cmd"
+         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" --use-local-env --cl-version 2013 -ccbin "D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include"  -G   --keep-dir x64\Debug -maxrregcount=0  --machine 64 --compile -cudart static  -g   -D_CRT_SECURE_NO_WARNINGS -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Zi /RTC1 /MT " -o x64\Debug\segment.cu.obj "E:\VS2013_Project\hsp\hsegment\segment.cu"
+         
+         E:\VS2013_Project\hsp\hsegment>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" --use-local-env --cl-version 2013 -ccbin "D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include"  -G   --keep-dir x64\Debug -maxrregcount=0  --machine 64 --compile -cudart static  -g   -D_CRT_SECURE_NO_WARNINGS -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Zi /RTC1 /MT " -o x64\Debug\segment.cu.obj "E:\VS2013_Project\hsp\hsegment\segment.cu" 
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.5\include\math_functions.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.5\include\math_functions.h(859): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.5\include\math_functions.h(1807): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.5\include\math_functions.h(2657): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.5\include\math_functions.h(3541): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.5\include\math_functions.h(4492): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.5\include\math_functions.h(5412): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.5\include\math_functions.h(6320): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.5\include\math_functions.h(7195): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.5\include\math_functions.h(8066): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.5\include\device_functions.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.5\include\device_functions.h(775): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.5\include\device_functions.h(1621): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.5\include\device_double_functions.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.5\include\sm_20_intrinsics.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.5\include\sm_20_intrinsics.h(943): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>D:\opencv4\build\include\opencv2/core/mat.hpp(1413): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>D:\opencv4\build\include\opencv2/core/base.hpp(266): warning : function declared with "noreturn" does return
+     1>D:\opencv4\build\include\opencv2/ml.hpp(318): warning : overloaded virtual function "cv::ml::StatModel::train" is only partially overridden in class "cv::ml::EM"
+     1>D:\opencv4\build\include\opencv2/ml.hpp(578): warning : overloaded virtual function "cv::ml::StatModel::train" is only partially overridden in class "cv::ml::LogisticRegression"
+     1>E:/VS2013_Project/hsp/hsegment/segment.cu(45): warning : variable "dxs" was declared but never referenced
+     1>E:/VS2013_Project/hsp/hsegment/segment.cu(46): warning : variable "dys" was declared but never referenced
+     1>E:/VS2013_Project/hsp/hsegment/segment.cu(304): warning : transfer of control bypasses initialization of:
+     1>E:/VS2013_Project/hsp/hsegment/segment.cu(310): warning : transfer of control bypasses initialization of:
+     1>E:/VS2013_Project/hsp/hsegment/segment.cu(316): warning : transfer of control bypasses initialization of:
+     1>E:/VS2013_Project/hsp/hsegment/segment.cu(322): warning : transfer of control bypasses initialization of:
+     1>E:/VS2013_Project/hsp/hsegment/segment.cu(328): warning : transfer of control bypasses initialization of:
+     1>E:/VS2013_Project/hsp/hsegment/segment.cu(334): warning : transfer of control bypasses initialization of:
+     1>E:/VS2013_Project/hsp/hsegment/segment.cu(340): warning : transfer of control bypasses initialization of:
+     1>E:/VS2013_Project/hsp/hsegment/segment.cu(356): warning : transfer of control bypasses initialization of:
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.5\include\math_functions.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.5\include\math_functions.h(859): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.5\include\math_functions.h(1807): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.5\include\math_functions.h(2657): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.5\include\math_functions.h(3541): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.5\include\math_functions.h(4492): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.5\include\math_functions.h(5412): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.5\include\math_functions.h(6320): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.5\include\math_functions.h(7195): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.5\include\math_functions.h(8066): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.5\include\math_functions.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.5\include\math_functions.h(859): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.5\include\math_functions.h(1807): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.5\include\math_functions.h(2657): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.5\include\math_functions.h(3541): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.5\include\math_functions.h(4492): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.5\include\math_functions.h(5412): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.5\include\math_functions.h(6320): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.5\include\math_functions.h(7195): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.5\include\math_functions.h(8066): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.5\include\device_functions_decls.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.5\include\device_functions_decls.h(910): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.5\include\device_functions_decls.h(1903): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.5\include\device_functions_decls.h(2843): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.5\include\device_functions_decls.h(3779): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.5\include\device_functions_decls.h(4721): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.5\include\device_functions_decls.h(5723): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.5\include\device_functions_decls.h(6682): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.5\include\device_functions_decls.h(7610): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.5\include\device_functions_decls.h(8543): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.5\include\device_functions_decls.h(9413): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.5\include\device_functions_decls.h(10391): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.5\include\device_functions_decls.h(11435): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.5\include\device_functions.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.5\include\device_functions.h(775): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.5\include\device_functions.h(1621): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.5\include\device_double_functions.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.5\include\sm_20_intrinsics.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.5\include\sm_20_intrinsics.h(943): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.5\include\math_functions.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.5\include\math_functions.h(859): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.5\include\math_functions.h(1807): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.5\include\math_functions.h(2657): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.5\include\math_functions.h(3541): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.5\include\math_functions.h(4492): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.5\include\math_functions.h(5412): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.5\include\math_functions.h(6320): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.5\include\math_functions.h(7195): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.5\include\math_functions.h(8066): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.5\include\device_functions.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.5\include\device_functions.h(775): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.5\include\device_functions.h(1621): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.5\include\device_double_functions.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.5\include\sm_20_intrinsics.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.5\include\sm_20_intrinsics.h(943): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>D:\opencv4\build\include\opencv2/core/mat.hpp(1413): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>D:\opencv4\build\include\opencv2/core/base.hpp(266): warning : function declared with "noreturn" does return
+     1>D:\opencv4\build\include\opencv2/core/affine.hpp(282): warning : controlling expression is constant
+     1>D:\opencv4\build\include\opencv2/ml.hpp(318): warning : overloaded virtual function "cv::ml::StatModel::train" is only partially overridden in class "cv::ml::EM"
+     1>D:\opencv4\build\include\opencv2/ml.hpp(578): warning : overloaded virtual function "cv::ml::StatModel::train" is only partially overridden in class "cv::ml::LogisticRegression"
+     1>E:/VS2013_Project/hsp/hsegment/segment.cu(45): warning : variable "dxs" was declared but never referenced
+     1>E:/VS2013_Project/hsp/hsegment/segment.cu(46): warning : variable "dys" was declared but never referenced
+     1>E:/VS2013_Project/hsp/hsegment/segment.cu(304): warning : transfer of control bypasses initialization of:
+     1>E:/VS2013_Project/hsp/hsegment/segment.cu(310): warning : transfer of control bypasses initialization of:
+     1>E:/VS2013_Project/hsp/hsegment/segment.cu(316): warning : transfer of control bypasses initialization of:
+     1>E:/VS2013_Project/hsp/hsegment/segment.cu(322): warning : transfer of control bypasses initialization of:
+     1>E:/VS2013_Project/hsp/hsegment/segment.cu(328): warning : transfer of control bypasses initialization of:
+     1>E:/VS2013_Project/hsp/hsegment/segment.cu(334): warning : transfer of control bypasses initialization of:
+     1>E:/VS2013_Project/hsp/hsegment/segment.cu(340): warning : transfer of control bypasses initialization of:
+     1>E:/VS2013_Project/hsp/hsegment/segment.cu(356): warning : transfer of control bypasses initialization of:
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.5\include\math_functions.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.5\include\math_functions.h(859): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.5\include\math_functions.h(1807): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.5\include\math_functions.h(2657): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.5\include\math_functions.h(3541): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.5\include\math_functions.h(4492): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.5\include\math_functions.h(5412): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.5\include\math_functions.h(6320): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.5\include\math_functions.h(7195): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\program files\nvidia gpu computing toolkit\cuda\v7.5\include\math_functions.h(8066): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         segment.cu
+       ClCompile:
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include" /Zi /nologo /W3 /WX- /sdl /Od /D _CRT_SECURE_NO_WARNINGS /D _MBCS /Gm /EHsc /RTC1 /MT /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Debug\\" /Fd"x64\Debug\vc120.pdb" /Gd /TP /errorReport:prompt BSDSBench\AllBench.cpp BSDSBench\BoundaryBench.cpp BSDSBench\RegionBench.cpp BSDSBench\source\correspondPixels.cc BSDSBench\source\csa.cc BSDSBench\source\Exception.cc BSDSBench\source\kofn.cc BSDSBench\source\match.cc BSDSBench\source\Matrix.cc BSDSBench\source\Random.cc BSDSBench\source\String.cc BSDSBench\Utils.cpp CmFile.cpp hsp.cpp main.cpp
+         main.cpp
+     1>D:\opencv4\build\include\opencv2/core/mat.hpp(1413): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         hsp.cpp
+     1>D:\opencv4\build\include\opencv2/core/mat.hpp(1413): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\vs2013_project\hsp\hsegment\dt.h(17): warning C4305: “=”: 从“double”到“float”截断
+     1>e:\vs2013_project\hsp\hsegment\dt.h(18): warning C4305: “=”: 从“double”到“float”截断
+     1>e:\vs2013_project\hsp\hsegment\dt.h(28): warning C4305: “=”: 从“double”到“float”截断
+     1>hsp.cpp(51): warning C4244: “/=”: 从“double”转换到“uchar”，可能丢失数据
+     1>hsp.cpp(75): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+     1>hsp.cpp(76): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+     1>hsp.cpp(104): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+     1>hsp.cpp(105): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+     1>hsp.cpp(106): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+     1>hsp.cpp(107): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+     1>hsp.cpp(475): warning C4244: “初始化”: 从“double”转换到“const int”，可能丢失数据
+     1>hsp.cpp(476): warning C4244: “初始化”: 从“double”转换到“const int”，可能丢失数据
+     1>hsp.cpp(1000): warning C4244: “初始化”: 从“double”转换到“const int”，可能丢失数据
+     1>hsp.cpp(1001): warning C4244: “初始化”: 从“double”转换到“const int”，可能丢失数据
+         CmFile.cpp
+         Utils.cpp
+         String.cc
+         Random.cc
+         Matrix.cc
+         match.cc
+         kofn.cc
+         Exception.cc
+         csa.cc
+         correspondPixels.cc
+         RegionBench.cpp
+         BoundaryBench.cpp
+         AllBench.cpp
+     1>D:\opencv4\build\include\opencv2/core/mat.hpp(1413): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         正在生成代码...
+       Link:
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"E:\VS2013_Project\hsp\x64\Debug\hsegment.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\lib\x64" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\VS2013_Project\hsp\x64\Debug\hsegment.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\VS2013_Project\hsp\x64\Debug\hsegment.lib" /MACHINE:X64 x64\Debug\segment.cu.obj
+         x64\Debug\AllBench.obj
+         x64\Debug\BoundaryBench.obj
+         x64\Debug\RegionBench.obj
+         x64\Debug\correspondPixels.obj
+         x64\Debug\csa.obj
+         x64\Debug\Exception.obj
+         x64\Debug\kofn.obj
+         x64\Debug\match.obj
+         x64\Debug\Matrix.obj
+         x64\Debug\Random.obj
+         x64\Debug\String.obj
+         x64\Debug\Utils.obj
+         x64\Debug\CmFile.obj
+         x64\Debug\hsp.obj
+         x64\Debug\main.obj
+     1>segment.cu.obj : error LNK2019: 无法解析的外部符号 cudaFree，该符号在函数 "enum cudaError __cdecl clusterWithCuda(class cv::Mat const &,class cv::Mat &,struct Component *,struct Score const *,bool,int)" (?clusterWithCuda@@YA?AW4cudaError@@AEBVMat@cv@@AEAV23@PEAUComponent@@PEBUScore@@_NH@Z) 中被引用
+     1>segment.cu.obj : error LNK2019: 无法解析的外部符号 cudaMalloc，该符号在函数 "enum cudaError __cdecl clusterWithCuda(class cv::Mat const &,class cv::Mat &,struct Component *,struct Score const *,bool,int)" (?clusterWithCuda@@YA?AW4cudaError@@AEBVMat@cv@@AEAV23@PEAUComponent@@PEBUScore@@_NH@Z) 中被引用
+     1>segment.cu.obj : error LNK2019: 无法解析的外部符号 cudaConfigureCall，该符号在函数 "enum cudaError __cdecl clusterWithCuda(class cv::Mat const &,class cv::Mat &,struct Component *,struct Score const *,bool,int)" (?clusterWithCuda@@YA?AW4cudaError@@AEBVMat@cv@@AEAV23@PEAUComponent@@PEBUScore@@_NH@Z) 中被引用
+     1>segment.cu.obj : error LNK2019: 无法解析的外部符号 cudaSetupArgument，该符号在函数 "void __cdecl __device_stub__Z10clusteringPKiPiP9ComponentPK5ScorePKbS0_S0_(int const *,int *,struct Component *,struct Score const *,bool const *,int const *,int const *)" (?__device_stub__Z10clusteringPKiPiP9ComponentPK5ScorePKbS0_S0_@@YAXPEBHPEAHPEAUComponent@@PEBUScore@@PEB_N00@Z) 中被引用
+     1>segment.cu.obj : error LNK2019: 无法解析的外部符号 cudaLaunch，该符号在函数 "enum cudaError __cdecl cudaLaunch<char>(char *)" (??$cudaLaunch@D@@YA?AW4cudaError@@PEAD@Z) 中被引用
+     1>segment.cu.obj : error LNK2019: 无法解析的外部符号 cudaMemcpy，该符号在函数 "enum cudaError __cdecl clusterWithCuda(class cv::Mat const &,class cv::Mat &,struct Component *,struct Score const *,bool,int)" (?clusterWithCuda@@YA?AW4cudaError@@AEBVMat@cv@@AEAV23@PEAUComponent@@PEBUScore@@_NH@Z) 中被引用
+     1>segment.cu.obj : error LNK2019: 无法解析的外部符号 __cudaRegisterFatBinary，该符号在函数 "void __cdecl __nv_cudaEntityRegisterCallback(void * *)" (?__nv_cudaEntityRegisterCallback@@YAXPEAPEAX@Z) 中被引用
+     1>segment.cu.obj : error LNK2019: 无法解析的外部符号 __cudaUnregisterFatBinary，该符号在函数 "void __cdecl __cudaUnregisterBinaryUtil(void)" (?__cudaUnregisterBinaryUtil@@YAXXZ) 中被引用
+     1>segment.cu.obj : error LNK2019: 无法解析的外部符号 __cudaRegisterFunction，该符号在函数 "void __cdecl __nv_cudaEntityRegisterCallback(void * *)" (?__nv_cudaEntityRegisterCallback@@YAXPEAPEAX@Z) 中被引用
+     1>E:\VS2013_Project\hsp\x64\Debug\hsegment.exe : fatal error LNK1120: 9 个无法解析的外部命令
+     1>已完成生成项目“E:\VS2013_Project\hsp\hsegment\hsegment.vcxproj”(Build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:15.00

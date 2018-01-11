@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="BSDSBench">
+      <UniqueIdentifier>{e7ba283b-d8fc-4487-b84a-82326847b494}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BSDSBench\source">
+      <UniqueIdentifier>{501dcacd-fce7-4f99-8492-249c367ef2d1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BSDSBench\AllBench.cpp">
+      <Filter>BSDSBench</Filter>
+    </ClCompile>
+    <ClCompile Include="BSDSBench\BoundaryBench.cpp">
+      <Filter>BSDSBench</Filter>
+    </ClCompile>
+    <ClCompile Include="BSDSBench\RegionBench.cpp">
+      <Filter>BSDSBench</Filter>
+    </ClCompile>
+    <ClCompile Include="BSDSBench\Utils.cpp">
+      <Filter>BSDSBench</Filter>
+    </ClCompile>
+    <ClCompile Include="BSDSBench\source\correspondPixels.cc">
+      <Filter>BSDSBench\source</Filter>
+    </ClCompile>
+    <ClCompile Include="BSDSBench\source\csa.cc">
+      <Filter>BSDSBench\source</Filter>
+    </ClCompile>
+    <ClCompile Include="BSDSBench\source\Exception.cc">
+      <Filter>BSDSBench\source</Filter>
+    </ClCompile>
+    <ClCompile Include="BSDSBench\source\kofn.cc">
+      <Filter>BSDSBench\source</Filter>
+    </ClCompile>
+    <ClCompile Include="BSDSBench\source\match.cc">
+      <Filter>BSDSBench\source</Filter>
+    </ClCompile>
+    <ClCompile Include="BSDSBench\source\Matrix.cc">
+      <Filter>BSDSBench\source</Filter>
+    </ClCompile>
+    <ClCompile Include="BSDSBench\source\Random.cc">
+      <Filter>BSDSBench\source</Filter>
+    </ClCompile>
+    <ClCompile Include="BSDSBench\source\String.cc">
+      <Filter>BSDSBench\source</Filter>
+    </ClCompile>
+    <ClCompile Include="CmFile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hsp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="hsp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BSDSBench\Bench.h">
+      <Filter>BSDSBench</Filter>
+    </ClInclude>
+    <ClInclude Include="BSDSBench\source\Array.hh">
+      <Filter>BSDSBench\source</Filter>
+    </ClInclude>
+    <ClInclude Include="BSDSBench\source\csa.hh">
+      <Filter>BSDSBench\source</Filter>
+    </ClInclude>
+    <ClInclude Include="BSDSBench\source\csa_defs.h">
+      <Filter>BSDSBench\source</Filter>
+    </ClInclude>
+    <ClInclude Include="BSDSBench\source\csa_types.h">
+      <Filter>BSDSBench\source</Filter>
+    </ClInclude>
+    <ClInclude Include="BSDSBench\source\Exception.hh">
+      <Filter>BSDSBench\source</Filter>
+    </ClInclude>
+    <ClInclude Include="BSDSBench\source\ieee_754.h">
+      <Filter>BSDSBench\source</Filter>
+    </ClInclude>
+    <ClInclude Include="BSDSBench\source\kofn.hh">
+      <Filter>BSDSBench\source</Filter>
+    </ClInclude>
+    <ClInclude Include="BSDSBench\source\match.hh">
+      <Filter>BSDSBench\source</Filter>
+    </ClInclude>
+    <ClInclude Include="BSDSBench\source\Matrix.hh">
+      <Filter>BSDSBench\source</Filter>
+    </ClInclude>
+    <ClInclude Include="BSDSBench\source\Point.hh">
+      <Filter>BSDSBench\source</Filter>
+    </ClInclude>
+    <ClInclude Include="BSDSBench\source\Random.hh">
+      <Filter>BSDSBench\source</Filter>
+    </ClInclude>
+    <ClInclude Include="BSDSBench\source\Sort.hh">
+      <Filter>BSDSBench\source</Filter>
+    </ClInclude>
+    <ClInclude Include="BSDSBench\source\String.hh">
+      <Filter>BSDSBench\source</Filter>
+    </ClInclude>
+    <ClInclude Include="CmFile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="definitions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CmIllu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BSDSBench\source\build.m">
+      <Filter>BSDSBench\source</Filter>
+    </None>
+    <None Include="BSDSBench\source\correspondPixels.mexw64">
+      <Filter>BSDSBench\source</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="segment.cu">
+      <Filter>Source Files</Filter>
+    </CudaCompile>
+  </ItemGroup>
+</Project>
