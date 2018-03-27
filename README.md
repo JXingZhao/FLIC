@@ -1,17 +1,15 @@
 ## Deeply Supervised Salient Object Detection with Short Connections
 
 ### Network architecture and more details
-Please refer to [our paper](https://arxiv.org/abs/1611.04849).
+Please refer to [our paper](https://arxiv.org/pdf/1612.01810.pdf).
 
-### Usage
-Please install [Caffe](https://github.com/BVLC/caffe) first. I think you may find a great number of tutorials talking about how to install it.
+### Operating environment
+Our method runs on Windows 10 operating system. 
+Please install Opencv3(https://opencv.org/opencv-3-0.html) and Visual Studio 2013.
 ```bash
 cd <caffe_root>/examples
-git clone https://github.com/Andrew-Qibin/DSS.git
+git clone https://github.com/JXingZhao/FLIC.git
 ```
-Before you start, you also need our pretrained model.
-```bash
-wget http://mftp.mmcheng.net/Andrew/dss_model_released.caffemodel
 ```
 You can also download it from [here (google drive)](https://drive.google.com/file/d/0B21WWgRw0U1uMFVKN3NPT0VHMW8/view?usp=sharing). The results produced by this model are slightly different from the ones we reported in our paper (with higher F-measure score and also higher MAE score).
 
