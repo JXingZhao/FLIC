@@ -1,6 +1,6 @@
 ## FLIC:Fast Linear Iterative Clustering With Active Search
 
-### Network architecture and more details
+###  More details
 Please refer to [our paper](https://arxiv.org/pdf/1612.01810.pdf).
 
 ### Operating environment
