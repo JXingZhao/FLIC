@@ -13,9 +13,7 @@ git clone https://github.com/JXingZhao/FLIC.git
 
 The Datasets we use are BSDS500 Dataset(https://www2.eecs.berkeley.edu/Research/Projects/CS/vision/bsds/) and PASCAL Context Dataset
 (https://www.cs.stanford.edu/~roozbeh/pascal-context/)
-```bash
-ipython notebook DSS-tutorial.ipynb
-```  
+
 
 
 
