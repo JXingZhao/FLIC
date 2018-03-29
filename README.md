@@ -7,7 +7,7 @@ Please refer to [our paper](https://arxiv.org/pdf/1612.01810.pdf).
 Our method runs on Windows 10 operating system. 
 Please install Opencv3(https://opencv.org/opencv-3-0.html) and Visual Studio 2013.
 ```bash
-cd <caffe_root>/examples
+cd /examples
 git clone https://github.com/JXingZhao/FLIC.git
 ```
 
