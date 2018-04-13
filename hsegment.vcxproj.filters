@@ -137,9 +137,4 @@
       <Filter>BSDSBench\source</Filter>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <CudaCompile Include="segment.cu">
-      <Filter>Source Files</Filter>
-    </CudaCompile>
-  </ItemGroup>
 </Project>

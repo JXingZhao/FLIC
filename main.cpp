@@ -58,7 +58,7 @@ int main(int argc, char *argv[])
 
 	int start = clock();
 	string workDir("E:/Dataset/BSR/BSDS500/");
-	string outputDir = "E:/Dataset/BSR/BSDS500/Tip/FLIC_neiber8/";
+	string outputDir = "E:/Dataset/BSR/BSDS500/Tip/Journal/";
 	const char* c_output = outputDir.data();
 	if (access(c_output, 00))
 	{
@@ -76,48 +76,36 @@ int main(int argc, char *argv[])
 	string inputName;
 	string outputName;
 	string tag("_flic");
-	vecM G_truth;
-	G_truth.reserve(5);
-	string ground_truth("E:/Dataset/BSR/BSDS500/Annotations/");
-	string input_gt;
+	
+	
+	
 	int average_num = 0;
 	int numLabels;
-	for (int itr = 1; itr <= 1; itr++)
+	
+	for (int i = 0; i < numTest; ++i)
 	{
-		for (int i = 0; i < numTest; ++i)
-		{
-			inputName = imageDir + testList[i] + ".jpg";
-			
-			cout << "Processing " << inputName << " " << (i + 1) << "/" << numTest << endl;
-					//continue;
-
-					//cout << "Processing " << inputName << " " << (i + 1) << "/" << numTest << endl;
+		inputName = imageDir + testList[i] + ".jpg";		
+		cout << "Processing " << inputName << " " << (i + 1) << "/" << numTest << endl;
 #ifdef TEST
-			get_output_name(inputName, outputDir, outputName, tag);
-			outputName = outputName.substr(0, outputName.rfind('.')).append(".png");
-			hsp.segment(inputName, outputName, 100);
+		get_output_name(inputName, outputDir, outputName, tag);
+		outputName = outputName.substr(0, outputName.rfind('.')).append(".png");
+		hsp.segment(inputName, outputName, 100);
 #else
-			hsp.segment_for_evaluation(inputName,200, numLabels, 2);
-			//cout << hsp.move_number << endl;
-			average_num += numLabels;
+		hsp.segment_for_evaluation(inputName,200, numLabels, 2);
+		average_num += numLabels;
 #endif
-
-
-
-		}
-		cout << average_num / 200 << endl;
-		int end = clock();
-		double time = (double)(end - start) / CLOCKS_PER_SEC;
-		cout << "Running time: " << time << "ms" << endl;
-#ifndef TEST
-		hsp.bsds_bench(outputDir, workDir + "Annotations/", numTest, testList);
-#endif
-		hsp._labels.clear();
 	}
-	int a;
-	cin >> a;
+	cout << average_num / 200 << endl;
+	int end = clock();
+	double time = (double)(end - start) / CLOCKS_PER_SEC;
+	cout << "Running time: " << time << "ms" << endl;
+#ifndef TEST
+	hsp.bsds_bench(outputDir, workDir + "Annotations/", numTest, testList);
+#endif
+	hsp._labels.clear();
+	
+	
 	system("pause");
     
 	
-		return 0;
 }

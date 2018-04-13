@@ -23,7 +23,7 @@ using std::cout;
 using std::endl;
 using namespace cv;
 #define INF 1E20
-extern cudaError_t clusterWithCuda(const Mat& img, Mat& imgLabels, Component* _components, const Score* scores, const bool is_test, const int _numsp);
+
 
 bool compare_components(Score &a, Score &b)
 {
@@ -55,17 +55,7 @@ void HSuperpixel::load_image(const string &imgName, Mat &out)
     out = img;
 }
 
-void HSuperpixel::show_image(const Mat &img, const string &name)
-{
-    show_image(img, name.c_str());
-}
 
-void HSuperpixel::show_image(const Mat &img, const char *name)
-{
-    namedWindow(name);
-    imshow(name, img);
-    waitKey(0);
-}
 
 void HSuperpixel::init(Mat &img, Mat &imgLabels, const Spsize &spSize)
 {
@@ -89,8 +79,7 @@ void HSuperpixel::init(Mat &img, Mat &imgLabels, const Spsize &spSize)
 	}
 	double xerrperstrip = double(xerr) / double(_xstrips);
 	double yerrperstrip = double(yerr) / double(_ystrips);
-	/*int xoff = spSize.w / 2;
-	int yoff = spSize.h / 2;*/
+	
 
 	int xrest = (_width - _xstrips * spSize.w) / 2;
 	int yrest = (_height - _ystrips * spSize.h) / 2;
@@ -125,68 +114,10 @@ void HSuperpixel::init(Mat &img, Mat &imgLabels, const Spsize &spSize)
             }
         }
     }
-	//cout << label << endl;
+
 }
 
-void HSuperpixel::draw_borders(Mat &img, Mat &imgLabels)
-{
-    int width = img.cols;
-    int height = img.rows;
-	Mat tag = Mat::zeros(img.rows, img.cols, CV_32S);
-    //
-    for (int h = 1; h < height-1; ++h)
-    {
-        Vec3b *pImg = img.ptr<Vec3b>(h);
-        int *pTopLabels = imgLabels.ptr<int>(h-1);
-        int *pImgLabels = imgLabels.ptr<int>(h);
-        int *pBottomLabels = imgLabels.ptr<int>(h+1);
-		int *pTags = tag.ptr<int>(h);
-        for (int w = 1; w < width-1; ++w)
-        {
-			int label = pImgLabels[w];
-            int leftLabel = pImgLabels[w-1];
-            int rightLabel = pImgLabels[w+1];
-            int topLabel = pTopLabels[w];
-            int bottomLabel = pBottomLabels[w];
-            if (leftLabel == rightLabel && topLabel == bottomLabel && leftLabel == topLabel)
-                continue;
-            else
-            {
-                pImg[w][0] = 255;
-                pImg[w][1] = 255;
-                pImg[w][2] = 255;
-				pTags[w] = 1;
-            }
-        }
-    }
-	
-	for (int h = 1; h < height - 1; ++h)
-	{
-		Vec3b *pImg = img.ptr<Vec3b>(h);
-		int *pTopLabels = tag.ptr<int>(h - 1);
-		int *pImgLabels = tag.ptr<int>(h);
-		int *pBottomLabels = tag.ptr<int>(h + 1);
-		for (int w = 1; w < width - 1; ++w)
-		{
-			int label = pImgLabels[w];
-			int leftLabel = pImgLabels[w - 1];
-			int rightLabel = pImgLabels[w + 1];
-			int topLabel = pTopLabels[w];
-			int bottomLabel = pBottomLabels[w];
-			if (leftLabel == 1 || topLabel == 1 || bottomLabel == 1 || rightLabel == 1)
-			{
-				if (label != 1)
-				{
-					pImg[w][0] = 0;
-					pImg[w][1] = 0;
-					pImg[w][2] = 0;
-				}
-//				pImgLabels[w] = -1;
-			}
-		}
-	}
-	
-}
+
 
 void HSuperpixel::draw_borders_manifold(unsigned int*& ubuff, int*& labels)
 {
@@ -444,7 +375,7 @@ void HSuperpixel::segment(const string& imgName, const string& outputPath, const
 
 	Mat color_img = Mat::zeros(img.rows, img.cols, CV_8UC3);
 	CmIllu::label2Rgb<int>(imgLabels, color_img);
-	imwrite(outputPath, color_img);
+	
 	draw_borders_manifold(ubuff, finalLabels);
 
 
@@ -452,23 +383,9 @@ void HSuperpixel::segment(const string& imgName, const string& outputPath, const
 	
 
 
-	Mat final_img = Mat::zeros(img.rows, img.cols, CV_8UC3);
-	int width = final_img.cols;
-	int height = final_img.rows;
-	for (int h = 0; h < height; ++h)
-	{
-		Vec3b *pMat = final_img.ptr<Vec3b>(h);
-		for (int w = 0; w < width; ++w)
-		{
-			unsigned int value = finalLabels[h * width + w];
-		
-			pMat[w][2] = static_cast<unsigned char>(value >> 16);
-			pMat[w][0] = static_cast<unsigned char>((value >> 8) & 0xFF);
-			pMat[w][1] = static_cast<unsigned char>(value & 0xFF);
-		}
-	}
+	
 	transform_to_mat_img(ubuff, img_rgb);
-
+	imwrite(outputPath, img_rgb);
 	delete[] ubuff;
 	delete[] labels;
 	delete[] finalLabels;
