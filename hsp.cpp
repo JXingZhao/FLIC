@@ -331,7 +331,7 @@ void HSuperpixel::release_components()
 
 void HSuperpixel::segment(const string& imgName, const string& outputPath, const int sparea)
 {
-	c = 20;
+	c = 10;
 	Mat img; 
 	is_test = false;
 	Mat img_rgb;
@@ -379,9 +379,9 @@ void HSuperpixel::segment(const string& imgName, const string& outputPath, const
 	draw_borders_manifold(ubuff, finalLabels);
 
 
-
 	
-
+	
+	
 
 	
 	transform_to_mat_img(ubuff, img_rgb);

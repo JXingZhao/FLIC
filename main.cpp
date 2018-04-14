@@ -19,7 +19,7 @@ using std::endl;
 using std::string;
 using std::vector;
 
-//#define TEST
+#define TEST
 
 void usage(int argc, char *argv[])
 {
@@ -58,7 +58,7 @@ int main(int argc, char *argv[])
 
 	int start = clock();
 	string workDir("E:/Dataset/BSR/BSDS500/");
-	string outputDir = "E:/Dataset/BSR/BSDS500/Tip/Journal/";
+	string outputDir = "E:/Dataset/BSR/result/";
 	const char* c_output = outputDir.data();
 	if (access(c_output, 00))
 	{
