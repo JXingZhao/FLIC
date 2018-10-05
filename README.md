@@ -23,7 +23,7 @@ The Datasets we use are BSDS500 Dataset(https://www2.eecs.berkeley.edu/Research/
 ```latex
 @inproceedings{zhao2018flic,
   title={FLIC: Fast Linear Iterative Clustering with Active Search},
-  author={Zhao, JiaXing and Bo, Ren and Hou, Qibin and Cheng, Ming-Ming},
+  author={Zhao, Jiaxing and Bo, Ren and Hou, Qibin and Cheng, Ming-Ming},
   booktitle={AAAI},
   year={2018}
 }
