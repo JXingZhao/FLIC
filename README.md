@@ -10,8 +10,9 @@ Please install Opencv3(https://opencv.org/opencv-3-0.html) and Visual Studio 201
 git clone https://github.com/JXingZhao/FLIC.git
 ```
 
-The Datasets we use are BSDS500 Dataset(https://www2.eecs.berkeley.edu/Research/Projects/CS/vision/bsds/) and PASCAL Context Dataset. To run the evaluation code, you should use the cvt_format_bsds.m to convert the data format.
+The Datasets we use are BSDS500 Dataset(https://www2.eecs.berkeley.edu/Research/Projects/CS/vision/bsds/) and PASCAL Context Dataset. 
 (https://www.cs.stanford.edu/~roozbeh/pascal-context/)
+To run the evaluation code, you should use the cvt_format_bsds.m to convert the data format.
 
 
 
